@@ -1,0 +1,25 @@
+@echo off
+setlocal enabledelayedexpansion
+echo Quadratic Equation Solver
+echo.
+set /p a=Enter coefficient a: 
+set /p b=Enter coefficient b: 
+set /p c=Enter coefficient c: 
+set /a d=b*b-4*a*c
+if %d% LSS 0 (
+    echo No real roots.
+) else (
+    set /a sqrt_d=0
+    for /L %%i in (1,1,%d%) do (
+        set /a sqrt_d=%%i
+        if !sqrt_d!*sqrt_d! GTR %d% (
+            set /a sqrt_d=%%i-1
+            goto :found
+        )
+    )
+    :found
+    set /a x1=(-b+sqrt_d)/(2*a)
+    set /a x2=(-b-sqrt_d)/(2*a)
+    echo Roots: %x1% and %x2%
+)
+pause
