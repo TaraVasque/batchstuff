@@ -20,12 +20,12 @@ Batchstuff is a collection of batch scripts designed to automate various tasks. 
 - **network_info.bat**: Displays network configuration and status information.
 - **disk_usage.bat**: Shows the disk usage of all drives.
 ## Folder>Calculators
--****:
--****:
--****:
--****:
+- **Pythagorean_theorem_calc.bat**: does the pythagorean theorem thingy
+- **Quadratic_calc.bat**: calculates quadratic functions
+- **simple_calc.bat**: a simple multiplication, division,addition, and subtraction calculator
+- **trig_calc.bat**: calculates trig functions that are inputed
 ## Folder>InterestingStuff
--****:
+- ****:
 
   
 ## Getting Started
