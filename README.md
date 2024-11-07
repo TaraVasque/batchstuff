@@ -9,6 +9,7 @@ Batchstuff is a collection of batch scripts designed to automate various tasks. 
 - **Utilities**: Miscellaneous scripts for various tasks.
 
 ## File Descriptions
+##Folder>ComputerRelatedStuff
 - **cleanup.bat**: A script to delete temporary files and free up disk space.
 - **organize.bat**: Automatically organizes files into folders based on their extensions.
 - **backup.bat**: Creates backups of specified directories.
@@ -18,7 +19,15 @@ Batchstuff is a collection of batch scripts designed to automate various tasks. 
 - **delete_old_files.bat**: Deletes files older than a specified number of days.
 - **network_info.bat**: Displays network configuration and status information.
 - **disk_usage.bat**: Shows the disk usage of all drives.
+##Folder>Calculators
+-****:
+-****:
+-****:
+-****:
+##Folder>InterestingStuff
+-****:
 
+  
 ## Getting Started
 ### Prerequisites
 - Windows operating system
