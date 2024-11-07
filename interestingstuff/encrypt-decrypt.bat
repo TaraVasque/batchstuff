@@ -1,47 +1,36 @@
 @echo off
 :menu
-echo Simple Calculator
-echo.
-echo 1. Addition
-echo 2. Subtraction
-echo 3. Multiplication
-echo 4. Division
-echo 5. Exit
-set /p choice=Choose an operation: 
-if %choice%==1 goto add
-if %choice%==2 goto subtract
-if %choice%==3 goto multiply
-if %choice%==4 goto divide
-if %choice%==5 exit
+cls
+echo Select an option:
+echo 1. Base32 Encode
+echo 2. Base32 Decode
+echo 3. Exit
+set /p choice=Enter your choice (1-3): 
 
-:add
-set /p a=Enter first number: 
-set /p b=Enter second number: 
-set /a result=a+b
-echo Result: %result%
+if %choice%==1 goto encode
+if %choice%==2 goto decode
+if %choice%==3 goto exit
+goto menu
+
+:encode
+cls
+set /p "input=Enter the string to encode: "
+powershell -command "[System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes('%input%'))" > encoded.txt
+set /p encoded=<encoded.txt
+echo Encoded: %encoded%
+del encoded.txt
 pause
 goto menu
 
-:subtract
-set /p a=Enter first number: 
-set /p b=Enter second number: 
-set /a result=a-b
-echo Result: %result%
+:decode
+cls
+set /p "input=Enter the Base32 string to decode: "
+powershell -command "[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('%input%'))" > decoded.txt
+set /p decoded=<decoded.txt
+echo Decoded: %decoded%
+del decoded.txt
 pause
 goto menu
 
-:multiply
-set /p a=Enter first number: 
-set /p b=Enter second number: 
-set /a result=a*b
-echo Result: %result%
-pause
-goto menu
-
-:divide
-set /p a=Enter first number: 
-set /p b=Enter second number: 
-set /a result=a/b
-echo Result: %result%
-pause
-goto menu
+:exit
+exit
