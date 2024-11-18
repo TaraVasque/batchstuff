@@ -81,7 +81,7 @@ Batchstuff is a collection of batch scripts designed to automate various tasks. 
 5. Open a pull request.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT License](./LICENSE) - see the LICENSE file for details.
 
 ## Acknowledgements
 - Thanks to all contributors and users of this project.
