@@ -29,8 +29,8 @@ Batchstuff is a collection of batch scripts designed to automate various tasks. 
 ## Folder>games
 - **pong.bat**:
 - **rockpaperscisors.bat**:
-- **simple_calc.bat**: 
-- **simple_calc.bat**: 
+- **sguessthenumber.bat**: 
+- **snake.bat**: 
 - **simple_calc.bat**:
 -   
 ## Getting Started
