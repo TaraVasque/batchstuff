@@ -26,8 +26,13 @@ Batchstuff is a collection of batch scripts designed to automate various tasks. 
 - **trig_calc.bat**: calculates trig functions that are inputed
 ## Folder>InterestingStuff
 - **encrypt_decrypt.bat**: this is a base 32 encrypter and decrypter
- 
-  
+## Folder>games
+- **pong.bat**:
+- **rockpaperscisors.bat**:
+- **simple_calc.bat**: 
+- **simple_calc.bat**: 
+- **simple_calc.bat**:
+-   
 ## Getting Started
 ### Prerequisites
 - Windows operating system
