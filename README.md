@@ -1,5 +1,17 @@
 # Batchstuff
 
+## Table of Contents
+1. [Description](#description)
+2. [Features](#features)
+3. [File Descriptions](#file-descriptions)
+4. [Getting Started](#getting-started)
+    1. [Prerequisites](#prerequisites)
+    2. [Installation](#installation)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Acknowledgements](#acknowledgements)
+
 ## Description
 Batchstuff is a collection of batch scripts designed to automate various tasks. This repository includes scripts for file management, system maintenance, and other utilities.
 
