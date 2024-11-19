@@ -27,6 +27,42 @@ function shuffleDeck() {
     }
 }
 
+// Function to create ASCII art for the card
+function cardToASCII(card) {
+    const rank = card.rank;
+    const suit = card.suit;
+
+    // Card borders and content
+    const topBottom = ' _____ ';
+    const middle = `|${rank.padStart(2, ' ')} ${suit}|`;
+
+    return [topBottom, middle, topBottom]; // Return the 3 lines of the card
+}
+
+// Function to display the cards side by side
+function displayCards(hand, who) {
+    // Initialize empty rows for each card line
+    let row1 = '';
+    let row2 = '';
+    let row3 = '';
+
+    // Loop through the hand and create the ASCII art for each card
+    hand.forEach(card => {
+        const cardArt = cardToASCII(card);
+
+        // Add each card's ASCII art to the appropriate row
+        row1 += cardArt[0] + '  ';
+        row2 += cardArt[1] + '  ';
+        row3 += cardArt[2] + '  ';
+    });
+
+    // Print the result side by side
+    console.log(`${who} cards:`);
+    console.log(row1);
+    console.log(row2);
+    console.log(row3);
+}
+
 // Function to calculate hand total
 function getHandTotal(hand) {
     let total = 0;
@@ -50,32 +86,6 @@ function getHandTotal(hand) {
     }
 
     return total;
-}
-
-// Function to create ASCII art for the card
-function cardToASCII(card) {
-    const rank = card.rank;
-    const suit = card.suit;
-
-    const topBottom = ' _____ ';
-    const middle = `|${rank.padStart(2, ' ')} ${suit}|`;
-
-    return [
-        topBottom,
-        middle,
-        topBottom
-    ].join('\n');
-}
-
-// Function to display the cards
-function displayCards(hand, who) {
-    let cardStr = '';
-    hand.forEach(card => {
-        cardStr += cardToASCII(card) + '\n';
-    });
-
-    console.log(`${who} cards:`);
-    console.log(cardStr);
 }
 
 // Function to prompt for player actions
@@ -132,7 +142,14 @@ function determineWinner(playerHand, dealerHand) {
         console.log('It\'s a tie!');
     }
 
-    rl.close();
+    rl.question('Do you want to play again? (Y/N): ', (answer) => {
+        if (answer.toLowerCase() === 'y') {
+            startGame();
+        } else {
+            console.log('Thanks for playing!');
+            rl.close();
+        }
+    });
 }
 
 // Function to start the game
