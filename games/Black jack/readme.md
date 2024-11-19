@@ -1,0 +1,1 @@
+just run the batch script so you dont have to type out commands into the cmd prompt :D
