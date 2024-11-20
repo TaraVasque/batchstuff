@@ -42,7 +42,7 @@ Batchstuff is a collection of batch scripts designed to automate various tasks. 
 
   ### Folder: `InterestingStuff`
   - **encrypt_decrypt.bat**: A base 32 encrypter and decrypter.
-
+  - **dateandtime.bat**: displays the current date and time of The selected timezone
   ### Folder: `games`
   - **pong.bat**: A simple Pong game.
   - **rockpaperscisors.bat**: The classic rock-paper-scissors game.
