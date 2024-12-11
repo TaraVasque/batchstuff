@@ -14,10 +14,10 @@
 
 ## Description
 Batchstuff is a collection of batch scripts designed to automate various tasks. This repository includes scripts for file management, system maintenance, and other utilities.
-
-## Batch Files Overview
 <details>
-    <summary>**Batch Files Overview**</summary>
+## Batch Files Overview
+
+   
 ## **Calculators**
 <details>
 <summary>**pythagorean_theorem_calc.bat**</summary>
