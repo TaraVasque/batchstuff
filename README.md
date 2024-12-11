@@ -14,8 +14,9 @@
 
 ## Description
 Batchstuff is a collection of batch scripts designed to automate various tasks. This repository includes scripts for file management, system maintenance, and other utilities.
+
 <details>
-## Batch Files Overview
+    <summary> Batch Files Overview</summary>
 
    
 ## **Calculators**
