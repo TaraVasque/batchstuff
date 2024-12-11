@@ -15,8 +15,8 @@
 ## Description
 Batchstuff is a collection of batch scripts designed to automate various tasks. This repository includes scripts for file management, system maintenance, and other utilities.
 
-# Batch Files Overview
-
+## Batch Files Overview
+<details>
 ## **Calculators**
 <details>
 <summary>**pythagorean_theorem_calc.bat**</summary>
@@ -811,7 +811,7 @@ The main entry point for a batch script-based project.
 </details>
 
 </details>
-
+</details>
 
 ## Features
 - **File Management**: Scripts to organize, move, and delete files.
