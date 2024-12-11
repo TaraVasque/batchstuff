@@ -17,6 +17,7 @@ Batchstuff is a collection of batch scripts designed to automate various tasks. 
 
 ## Batch Files Overview
 <details>
+    
 ## **Calculators**
 <details>
 <summary>**pythagorean_theorem_calc.bat**</summary>
